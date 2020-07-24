@@ -2,13 +2,13 @@
 
 ## Exercise I
 
-a)
+a) O(n)cubed or O (n * n * n)
 
 
-b)
+b) O (log n)
 
 
-c)
+c) O (n)
 
 ## Exercise II
 
