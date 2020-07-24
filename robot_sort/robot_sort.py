@@ -93,31 +93,26 @@ class SortingRobot:
         return self._light == "ON"
 
     def sort(self):
-        """
-        Sort the robot's list.
-        """
+        self.swap_item()
+        self.set_light_on()
 
-        for i in range(0, len(self._list) - 1): 
-            print (i)
-
-        
-        #* You may use iterators. (`while`, `for`, `break`, `continue`)
-        
-        #* You may use any pre-defined robot methods.
-        #* You may NOT modify any pre-defined robot methods.
-        #* You may use logical operators. (`if`, `and`, `or`, `not`, etc.)
-        #* You may use comparison operators. (`>`, `>=`, `<`, `<=`, `==`, `is`, etc.)
-        
-        #* You may NOT store any variables. (`=`)
-        #* You may NOT access any instance variables directly. (`self._anything`)s
-        #* You may NOT use any Python libraries or class methods. (`sorted()`, etc.)
-        #* You may define robot helper methods, as long as they follow all the rules.
-
-        
-
-        # Fill this out
-        pass
-
+        while self.light_is_on: 
+            print(self._list)
+            while self.can_move_right(): 
+                self.move_right()
+                if self.compare_item() == -1: 
+                    self.swap_item()
+            if self.compare_item() is None and self.can_move_right() is False: 
+                self.swap_item()
+                self.set_light_off()
+                break
+            else: 
+                while self.can_move_left():  
+                    self.move_left()
+                    if self.compare_item() is None: 
+                        self.swap_item()
+                        self.move_right()
+                        self.swap_item()
 
 if __name__ == "__main__":
     # Test our your implementation from the command line

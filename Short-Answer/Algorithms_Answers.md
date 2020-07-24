@@ -5,7 +5,7 @@
 a) O(n)cubed or O (n * n * n)
 
 
-b) O (log n)
+b) O (n log n)
 
 
 c) O (n)
