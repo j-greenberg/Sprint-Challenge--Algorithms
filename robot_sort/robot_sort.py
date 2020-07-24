@@ -96,6 +96,25 @@ class SortingRobot:
         """
         Sort the robot's list.
         """
+
+        for i in range(0, len(self._list) - 1): 
+            print (i)
+
+        
+        #* You may use iterators. (`while`, `for`, `break`, `continue`)
+        
+        #* You may use any pre-defined robot methods.
+        #* You may NOT modify any pre-defined robot methods.
+        #* You may use logical operators. (`if`, `and`, `or`, `not`, etc.)
+        #* You may use comparison operators. (`>`, `>=`, `<`, `<=`, `==`, `is`, etc.)
+        
+        #* You may NOT store any variables. (`=`)
+        #* You may NOT access any instance variables directly. (`self._anything`)s
+        #* You may NOT use any Python libraries or class methods. (`sorted()`, etc.)
+        #* You may define robot helper methods, as long as they follow all the rules.
+
+        
+
         # Fill this out
         pass
 
